@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style type="text/tailwindcss">
+    * {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>YouTube Clone</title>
+
+</head>
+
+<body class="bg-white text-black">
+
+  <!-- NAVBAR -->
+  <nav class="flex items-center justify-between px-6 py-4">
+    
+    <!-- Logo -->
+    <div class="flex items-center gap-2">
+      <img src="ytlogo.png" class="w-8" alt="menu">
+      <h1 class="text-2xl font-semibold">YouTube</h1>
+    </div>
+
+    <!-- Search -->
+    <div class="flex items-center gap-3 w-1/2">
+      <input
+        type="search"
+        placeholder="Search"
+        class="flex-1 border rounded-full px-4 py-2 outline-none"
+      />
+      <i class="fa fa-microphone"></i>
+    </div>
+
+    <!-- Actions -->
+    <div class="flex items-center gap-6">
+      <span>Create</span>
+      <div class="w-8 h-8 bg-gray-300 rounded-full"></div>
+      <div class="w-8 h-8 bg-gray-400 rounded-full"></div>
+    </div>
+
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <section class="flex">
+
+    <!-- SIDEBAR -->
+    <aside class="w-56 p-6">
+      <ul class="space-y-4 text-lg">
+        <li><button>Home</button></li>
+        <li><button>Shorts</button></li>
+        <li><button>Subscriptions</button></li>
+        <li><button>History</button></li>
+        <li><button>Playlists</button></li>
+        <li><button>Watch Later</button></li>
+        <li><button>Liked Videos</button></li>
+        <li><button>Downloads</button></li>
+        <li><button>Music</button></li>
+        <li><button>Movies</button></li>
+      </ul>
+    </aside>
+
+    <!-- VIDEOS GRID -->
+    <main class="flex-1 p-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="video-container">
+
+        <!-- Video Card -->
+        <div>
+          <div class="aspect-video bg-gray-300 rounded-lg">
+            <img src="" alt="">
+          </div>
+          <p class="mt-2 font-medium text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <div>
+          <div class="aspect-video bg-gray-300 rounded-lg"></div>
+          <p class="mt-2 font-medium text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <div>
+          <div class="aspect-video bg-gray-300 rounded-lg"></div>
+          <p class="mt-2 font-medium text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <div>
+          <div class="aspect-video bg-gray-300 rounded-lg"></div>
+          <p class="mt-2 font-medium text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <div>
+          <div class="aspect-video bg-gray-300 rounded-lg"></div>
+          <p class="mt-2 font-medium text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <div>
+          <div class="aspect-video bg-gray-300 rounded-lg"></div>
+          <p class="mt-2 font-medium text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+
+      </div>
+    </main>
+
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
