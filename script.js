@@ -1,4 +1,4 @@
-const API_KEY = 'AIzaSyApHlEblqIvaGfu2DkGHvBWgOkfk6CgasU';
+const API_KEY = 'API_KEY';
 
 const videoContainer = document.querySelector('#video-container');
 
@@ -37,5 +37,6 @@ function displayVideos(videos) {
     videoContainer.appendChild(card);
   });
 }
+
 
 fetchVideos();
